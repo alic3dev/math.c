@@ -12,6 +12,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+    - name: create directories
+      run: mkdir -p objects tests/objects
     - name: make
       run: make
     - name: make tests
